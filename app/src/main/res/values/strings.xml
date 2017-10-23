@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">OZ Way-Finder</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="optimization_mode">Driving Mode</string>
+    <string name="short_line_mode">Walking Mode</string>
+    <string name="VIC_Restaurant">VIC Restaurant Liquor Lic</string>
+    <string name="AU_Toilet">Public Toilet Locations</string>
+    <string name="AU_Medicare">Medicare Locations</string>
+    <string name="AU_Centrelink">Centrelink Locations</string>
+    <string name="VIC_School">VIC School Locations</string>
+    <string name="VIC_RecrCtr">VIC Recreation Centre</string>
+    <string name="VIC_BusStop">VIC Bus Stop</string>
+    <string name="VIC_TramStop">VIC Tram Stop</string>
+    <string name="VIC_TrainStop">VIC Train Station</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ka20er.aurinwayfinder">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <uses-library android:name="com.google.android.maps"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+        <activity
+            android:name="ka20er.aurinwayfinder.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="LiquorLicense_DATA_RETRIEVED"/>
+                <action android:name="PublicToilet_DATA_RETRIEVED"/>
+                <action android:name="Medicare_DATA_RETRIEVED"/>
+                <action android:name="Centrelink_DATA_RETRIEVED"/>
+                <action android:name="School_DATA_RETRIEVED"/>
+                <action android:name="RecreationFacility_DATA_RETRIEVED"/>
+                <action android:name="Bus_DATA_RETRIEVED"/>
+                <action android:name="Tram_DATA_RETRIEVED"/>
+                <action android:name="Train_DATA_RETRIEVED"/>
+                <action android:name="Nothing_DATA_RETRIEVED"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="ka20er.aurinwayfinder.MapsActivity"
+            android:label="@string/title_activity_maps">
+        </activity>
+
+        <service
+            android:name="ka20er.aurinwayfinder.DataRetrievalService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+        <activity android:name="ka20er.aurinwayfinder.ListingActivity"></activity>
+        <activity android:name="ka20er.aurinwayfinder.AboutUsActivity"></activity>
+    </application>
+</manifest>
